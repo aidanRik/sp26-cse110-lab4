@@ -1,3 +1,4 @@
+**CSE 110 - Lab 4 Part 2**
 1. ^^^ What will happen at line 12 and why? If the code causes an error, explain why. \
 The console will log 3, the current value of `i`. This happens because `i`is declared using var within the for block, and because var is function scoped it can be accessed anywhere inside the function discountPrices. 3 is logged because the length of prices is 3 and when the for loop ends when it reaches `i < prices.length`.
 
@@ -63,12 +64,22 @@ H. '3' - undefined \
 
 14. Comparison \ 
 A. '2' > 1 \
+`true` is returned because `2` gets mapped to its integer representation. When comparing two different types in JS, they both get converted to numbers. \
+B. '2' < '12' \
+`false` is returned because both strings don't get converted and then they are compared lexicographically, so they compare 1st characters which are `2` and the `1` in `12` and since 2 is greater then 1 it is false. \
+C. 2 == '2' \
+`true` is returned because `'2'` gets converted to an integer. `==` is comparing if the two are equal. \
+D. 2 === '2' \
+`false` is returned becasue `===` checks if the two are equal without any type conversion applied. \
+E. true == 2 \
+`false` is returned because when there are two different types they both get converted to integers. So `true` converts to `1` and is therefore not equal to `2`. \
+F. true === Boolean(2) \
+`true` is returned because `Boolean()` will convert any non-zero number to `true`, and then `===` checks for equality without any type conversions which aren't needed because we applied the conversion directly with `Boolean(2)`.
 
-'2' < '12'
-2 == '2'
-2 === '2'
-true == 2
-true === Boolean(2)
+15. Explain the difference between the == and === operators. \
+The `==` operator will check for loose equality, meaning it will apply type conversions before checking for eqaulity. Meanwhile `===` will check for strict equality, meaning both value and type must match and it will not apply any type conversions before checking for equality.
+
+
 
 
 
