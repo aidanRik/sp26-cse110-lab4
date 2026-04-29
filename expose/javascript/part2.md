@@ -79,6 +79,15 @@ F. true === Boolean(2) \
 15. Explain the difference between the == and === operators. \
 The `==` operator will check for loose equality, meaning it will apply type conversions before checking for eqaulity. Meanwhile `===` will check for strict equality, meaning both value and type must match and it will not apply any type conversions before checking for equality.
 
+16. Answer in `part2-question16.js`
+
+17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. \
+`[2,4,6]` will be returned. If we walk through the function `modifyArray` we can see that there is a for loop that will iterate over each item in `array` and apply the `callback` function to each one of those items before adding them to `newArr`. We run `modifyArray` with these parameters `([1,2,3], doSomething)`, where the function `doSomething` takes a `num` and multiplies it by 2, which gives us the answer: `[2,4,6]`.
+
+18. Answer in `part2-question18.js`
+
+19. 
+
 
 
 
