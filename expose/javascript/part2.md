@@ -86,7 +86,10 @@ The `==` operator will check for loose equality, meaning it will apply type conv
 
 18. Answer in `part2-question18.js`
 
-19. 
+19. What is the output of the above code? (This should be in your part2.md) \
+`1`, `4`, `3`, `2` are all logged in the console on a new line for each number.
+
+
 
 
 
